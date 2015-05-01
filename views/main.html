@@ -1,8 +1,14 @@
 <div class="header">
-  <h3 class="text-muted">chatty</h3>
+	<h3 class="text-muted">chatty</h3>
 </div>
 
 <h4>Latest Chats:</h4>
-<div class="jumbotron">
+<div class="jumbotron"></div>
 
-</div>
+<form>
+	<input type="text" ng-model="newMessage" placeholder="Enter your message" class="form-control" ng-submit="addMessage()">
+	
+	</p>
+
+	<button ng-click="addMessage()" class="btn btn-default" ng-enter="addMessage()">Send</button>
+</form>
